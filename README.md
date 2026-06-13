@@ -1,3 +1,3 @@
-# Personal hyprland dotfiles
+#### Personal hyprland dotfiles
 
-Feel free to copy, nothing extraordinary anyway =)
+Keeping this here incase my laptop explodes
