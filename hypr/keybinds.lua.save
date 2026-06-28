@@ -13,6 +13,7 @@ hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd(P.menu))
 
 -- Binds for shortcuts
 
+
 hl.bind("SUPER + C",         hl.dsp.window.close())
 hl.bind("SUPER + V",         hl.dsp.window.float())
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
@@ -25,32 +26,4 @@ hl.bind("SUPER + " .. key,         hl.dsp.focus({ workspace = i}))
 hl.bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i}))
 
 end
-
--- Resolution toggle
-
-local default = true
-
-hl.bind("SUPER + TAB + P", function()
-if default then
-hl.monitor({
-output = "DP-1",
-mode = "1920x1080@144",
-position = "0x0",
-scale = 0.75,
-
-})
-end
-end)
-
-hl.bind("SUPER + TAB + O", function()
-if default then
-hl.monitor({
-output = "DP-1",
-mode = "2560x1440@144",
-position = "0x0",
-scale = 1,
-
-})
-end
-end)
 
